@@ -1,0 +1,112 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+header
+{
+    display:flex;
+    /* flex-direction: row; */
+    border: 2px solid red;
+}
+  
+body
+{
+    font-family: 'Raleway', 'Arial';
+    font-weight: normal;
+    background-color: #F2F2F2;
+}
+
+
+
+
+/* Navigation */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    /* align-content: flex-end;  */
+    border: 2px solid red;   
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+
+nav a
+{
+    color: #0065FC;
+    font-size: 1.3em;
+    text-decoration: none;
+
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+footer
+{
+    display: flex;
+    border: 2px solid red;
+}
+
+.titre
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link
+{
+    display: flex;
+    align-items: flex-end;
+    border: 2px solid red;
+}
+
+
+
+
+
+#logo img
+{
+    border: 2px solid red;
+    width: 154px;
+    height: 72px;
+    margin-top: 5px;
+}
+
+#block-content
+{
+    background-color: yellow;
+    font-family: 'Raleway', serif;
+    /* display: flex; */
+    /* border: 2px solid red; */
+}
+
+#login
+{
+    /* display: flex; */
+    /* position: absolute; */
+    border: 2px solid red;
+}
+
+#login a
+{
+    display: flex;
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+
+
+
