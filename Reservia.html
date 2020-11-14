@@ -1,56 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-		<link rel="stylesheet" href="Reservia.css">
+    <link rel="stylesheet" href="Reservia.css">
+    <script src="https://kit.fontawesome.com/9df359cbd1.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Reservia</title>
   </head>
 
   <body>
-    <div id="block-content"></div>
+    <div id="block-content">
       <header>
-        <div id=logo>
-          <img src="images/logo/Reservia@3x.png" alt="Réservia">
+        <div id="conteneur">
+          <div id=logo>
+            <img src="images/logo/Reservia@3x.png" alt="Réservia">
+          </div>
+            <nav>
+              <ul>
+                  <li><a href="#">Hébergements</a></li>
+                  <li><a href="#">Activités</a></li>
+              </ul>
+            </nav>
+            <div id="login">
+              <a href="#">S'inscrire</a>
+            </div> 
         </div>
-        <div class="link">
-          <nav>
-            <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-            </ul>
-          </nav>
-          <!-- <div id="login">
-            <a href="#">S'inscrire</a>
-          </div>  -->
-        </div> 
 
       </header>
       
       <section>
         
-        <p class="titre">Trouvez votre hébergement pour des vacances de rêves</p>
-        <p>En plein centre ville ou en pleine nature</p>
+        <div id="section_titre">
+
+          <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+          <div>En plein centre ville ou en pleine nature</div>
+
+        </div>
+
+        <div id="recherche_ville">
+          
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" name="recherche_ville" id="recherche_ville" placeholder="Marseille, France" value="Marseille, France">
+          <button>Rechercher</button>
+        </div>
+        
 
 
       </section>
-    
-      
-
-
-
-
-
-
-
-
-
-
-
+      <footer>
+        <p>Footer</p>
+      </footer>
+  
     </div>
 
-    <footer>
-      <p>Footer</p>
-    </footer>
+    
     
   </body>
 
