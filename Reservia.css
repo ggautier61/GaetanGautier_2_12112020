@@ -9,11 +9,6 @@
 
 
 
-header
-{
-    /* display:flex; */
-    border: 2px solid red;
-}
   
 body
 {
@@ -38,7 +33,7 @@ nav
 
     /* flex-direction: column; */
     align-content: flex-start;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 nav ul
@@ -46,14 +41,8 @@ nav ul
     list-style-type: none;
     padding-top: 0px;
     display: flex;
-    /* flex-direction: column; */
-    /* position: inherit; */
-    /* justify-content: space-around; */
-    /* align-items: flex-end; */
     height: 54px;
-    border: 2px solid red;   
-    /* margin-top: 5px; */
-    /* right: 5px; */
+    /* border: 2px solid red;    */
     padding-left: 15px;
 
 }
@@ -62,12 +51,6 @@ nav li
 {
     margin-right: 15px;
     display: flex;
-    /* align-items: center; */
-    /* padding-top: 5px; */
-    /* margin: auto; */
-    /* vertical-align: center; */
-    /* border: 1px solid black; */
-    
 }
 
 
@@ -99,6 +82,17 @@ section
     border: 2px solid violet;
 }
 
+/* button
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1em;
+    height: 30px;
+    margin-right: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+} */
+
 footer
 {
     display: flex;
@@ -112,29 +106,20 @@ footer
     font-weight: bold;
 }
 
-
-
 #conteneur
 {
     display: flex;
     
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 
     justify-content: space-between;
     /* margin: auto; */
     padding-right: 120px;
 }
 
-/* #logo
-{*/
-
-    /* align-items: baseline; */
-    /* flex: 1; */
-/* }  */
-
 #logo img
 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 116px;
     height: 54px;
     margin-top: 5px;
@@ -143,6 +128,7 @@ footer
 #block-content
 {
     font-family: 'Raleway', serif;
+    padding: 10px;
     /* margin: auto; */
     /* display: flex; */
     /* border: 2px solid red; */
@@ -154,11 +140,7 @@ footer
     position: absolute;
     top: 10px;
     right: 10px;
-    /* left: 0px; */
-    /* right: 20px; */
-    /* right: inherit; */
-    border: 2px solid red;
-    /* margin: auto; */
+    /* border: 2px solid red; */
 }
 
 #login a
@@ -171,10 +153,10 @@ footer
 
 }
 
-#section_titre
+/* #section_titre
 {
     border: 1px solid red;
-}
+} */
 
 #section h1
 {
@@ -187,37 +169,102 @@ footer
     /* align-items: baseline; */
     padding-top: 15px;
     padding-left: 20px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 #recherche_ville input
 {
-    padding: 5px;
-    font-size: 1.1em;
-    height: 30px;
+    padding: 0px;
+    padding-left:10px;
+    font-size: 1em;
+    height: 40px;
     font-weight: bold;
     /* justify-items: center; */
     /* text-align: center; */
-    /* border: none;*/
+    border: none;
 } 
 
 #recherche_ville button
 {
     background-color: #0065FC;
-    display: flex;
-    align-content: center;
+    /* display: flex; */
+    /* align-content: center; */
     height: 40px;
     color: white;
     border-color: #0065FC;
     box-shadow: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #recherche_ville i
 {
-    size: 3em;
-    border: 1px solid black;
+    /* size: 3em; */
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding-right: 10px;
+}
+
+#filtres
+{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+
+#filtres label
+{
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+#btn_economique, #btn_familial, #btn_romantique, #btn_animaux
+{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+#btn_economique button, #btn_familial button, #btn_romantique button, #btn_animaux button
+{
+    
+    padding-left: 25px;
+    padding-right: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1em;
+    height: 30px;
+    margin-right: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-radius: 15px; */
+    
+}
+
+#icon_eco, #icon_fam, #icon_rom, #icon_ani
+{
+    color: #0065FC;
+    margin: auto;
+    /* position: relative;
+    left: 5px;
+    top: 5px; */
+}
+
+.circle
+{
+    height: 30px;
+    width: 30px;
+    background-color: #c5d0e0;
+    border-radius: 15px;
+    margin: auto;
+    position: relative;
+    left: 15px;
+}
+
+
 
 @media all and (max-width: 700px)
 {
@@ -260,7 +307,3 @@ footer
     
 
 }
-
-
-
-
