@@ -9,74 +9,78 @@
   </head>
 
   <body>
+    <header>
+      <div id="conteneur">
+        <div id=logo>
+          <img src="images/logo/Reservia@3x.png" alt="Réservia">
+        </div>
+          <nav>
+            <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+            </ul>
+          </nav>
+          <div id="login">
+            <a href="#">S'inscrire</a>
+          </div> 
+      </div>
+
+    </header>
     <div id="block-content">
-      <header>
-        <div id="conteneur">
-          <div id=logo>
-            <img src="images/logo/Reservia@3x.png" alt="Réservia">
-          </div>
-            <nav>
-              <ul>
-                  <li><a href="#">Hébergements</a></li>
-                  <li><a href="#">Activités</a></li>
-              </ul>
-            </nav>
-            <div id="login">
-              <a href="#">S'inscrire</a>
-            </div> 
-        </div>
-
-      </header>
       
-      <section>
-        
-        <div id="section_titre">
+      <div id="titre">
+        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+      </div>
+      
 
-          <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-          <div>En plein centre ville ou en pleine nature</div>
-
-        </div>
-
-        <div id="recherche">
+      <div id="recherche">
           
-          <i class="fas fa-map-marker-alt"></i>
-          <input type="text" name="recherche_ville" id="recherche_ville" placeholder="Marseille, France" value="Marseille, France">
-          <button>Rechercher</button>
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" name="recherche_ville" id="recherche_ville" placeholder="Marseille, France" value="Marseille, France">
+        <button>Rechercher</button>
+      </div>
+      
+      <div id="filtres">
+        <label>Filtres</label>
+        <div id="btn_economique">
+          <div class="circle">
+            <i id="icon_eco" class="fas fa-money-bill-wave"></i>
+          </div>
+          <button>Économique</button>
+        </div>
+
+        <div id="btn_familial">
+          <div class="circle">
+            <i id="icon_fam" class="fas fa-child"></i>
+          </div>
+          <button>Familial</button>
+        </div>
+
+        <div id=btn_romantique>
+          <div class="circle">
+            <i id="icon_rom" class="fas fa-heart"></i>
+          </div>
+          <button>Romantique</button>
+        </div>
+
+        <div id="btn_animaux">
+          <div class="circle">
+            <i id="icon_ani" class="fas fa-dog"></i>
+          </div>
+          <button>Animaux autorisés</button>
         </div>
         
-        <div id="filtres">
-          <label>Filtres</label>
-          <div id="btn_economique">
-            <div class="circle">
-              <i id="icon_eco" class="fas fa-money-bill-wave"></i>
-            </div>
-            <button>économique</button>
-          </div>
-
-          <div id="btn_familial">
-            <div class="circle">
-              <i id="icon_fam" class="fas fa-child"></i>
-            </div>
-            <button>familial</button>
-          </div>
-
-          <div id=btn_romantique>
-            <div class="circle">
-              <i id="icon_rom" class="fas fa-heart"></i>
-            </div>
-            <button>romantique</button>
-          </div>
-
-          <div id="btn_animaux">
-            <div class="circle">
-              <i id="icon_ani" class="fas fa-dog"></i>
-            </div>
-            <button>animaux autorisés</button>
-          </div>
-          
+        
+      </div>
+      <div id="info">
+        <div class="circle_info">
+          <i id="icon_info" class="fas fa-info"></i>
         </div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+      
 
-      </section>
 
       <section>
         <article>
@@ -179,16 +183,87 @@
           
         </article>
         <aside>
-            
+            <div id="titre-populaire">
+              <h3>Les plus populaires</h3>
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div id="container-aside">
+              <div class="card-aside">
+                
+                  <img class="photo-aside" src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                
+                
+                <div class="conteneur-aside-details">
+                  <div class="titre_image">Hôtel Le soleil du matin</div>
+                  <div class="detail_image">Nuit à partir de <strong>128€</strong></div>
+                  <div class="stars">
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-aside">
+                <img class="photo-aside" src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                
+                <div class="conteneur-aside-details">
+                  <div class="titre_image">Au coeur de l'eau Chambres d'hôtes</div>
+                  <div class="detail_image">Nuit à partir de <strong>71€</strong></div>
+                  <div class="stars">
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_gray fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-aside">
+                <img class="photo-aside" src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                
+                <div class="conteneur-aside-details">
+                  <div class="titre_image">Hôtel Tout bleu et Blanc</div>
+                  <div class="detail_image">Nuit à partir de <strong>68€</strong></div>
+                  <div class="stars">
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_blue fas fa-star"></i>
+                    <i class="star_gray fas fa-star"></i>
+                  </div>
+                </div>
+              </div> 
+            </div>
         </aside>
       </section>
-      <footer>
-        <p>Footer</p>
-      </footer>
+      <section>
+        <article>
+
+        </article>
+      </section>
   
     </div>
 
-    
+    <footer>
+      <div class="footer_details">
+        <h3>A propos</h3>
+        <p>Fontionnement du site</p>
+        <p>Conditions générales de vente</p>
+        <p>Données et confidentialité</p>
+      </div>
+      <div class="footer_details">
+        <h3>Nos hébergements</h3>
+        <p>Charte qualité</p>
+        <p>Soumettre votre hôtel</p>
+      </div>
+      <div class="footer_details">
+        <h3>Assistance</h3>
+        <p>Centre d'aide</p>
+        <p>Nous contacter</p>
+      </div>      
+    </footer>
     
   </body>
 

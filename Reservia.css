@@ -8,146 +8,59 @@
 
 header
 {
-    border: 1px solid black;
-    align-content: center;
-}
-
-#logo img
-{
-    border: 2px solid red;
-    width: 116px;
-    height: 54px;
-    margin-top: 5px;
-}
-
-
-  
-body
-{
-    display: flex;
-    /* width: 1000px; */
-    flex-direction: column;
-    font-family: 'Raleway', 'Arial';
-    font-weight: normal;
-    /* border: 2px solid chartreuse; */
-    margin: auto;
-}
-
-
-
-
-/* Navigation */
-
-nav
-{
-    display: flex;
-
-    /* flex-direction: column; */
-    align-content: flex-start;
-    border: 2px solid yellow;
-}
-
-nav ul
-{
-    list-style-type: none;
-    padding-top: 0px;
-    display: flex;
-    height: 54px;
-    border: 2px solid red;   
-    padding-left: 15px;
-
-}
-
-nav li
-{
-    margin-right: 15px;
-    display: flex;
-}
-
-
-nav a
-{
-    border: 1px solid black;
-    font-size: 1.2em;
-    text-decoration: none;
-    display: flex;
-    vertical-align: middle;
-    text-align: center;
-
-}
-
-nav li:hover
-{
-    color: #0065FC;
-    /* font-size: 1.4em; */
-    border-top: 3px solid #0065FC;
-}
-
-section
-{
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    padding: 10px;
-    /* flex: 1; */
-    /* border: 2px solid violet; */
-}
-
-article
-{
-    background-color: #d4d1d1;
-    display: flex;
-    flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 20px;
-}
-
-/* button
-{
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 1em;
-    height: 30px;
-    margin-right: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-} */
-
-footer
-{
-    display: flex;
-    margin-bottom: 0px;
-    border: 2px solid orange;
-}
-
-.titre
-{
-    font-size: 20px;
-    font-weight: bold;
+    /* border: 1px solid black; */
+    height: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #conteneur
 {
     display: flex;
-    
-    /* border: 2px solid blue; */
-
     justify-content: space-between;
-    /* margin: auto; */
     padding-right: 120px;
 }
 
-
-
-#block-content
+#logo img
 {
-    font-family: 'Raleway', serif;
-    padding: 10px;
-    /* margin: auto; */
-    /* display: flex; */
-    /* border: 2px solid red; */
+    width: 116px;
+    height: 54px;
 }
+
+/*-------- Container Navigation --------*/
+nav
+{
+    display: flex;
+    /* border: 2px solid yellow; */
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    /* border: 2px solid red;*/
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.2em;
+    text-decoration: none;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+}
+
+nav li:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+/*--------- Fin Navigation -----------*/
 
 #login
 {
@@ -155,72 +68,81 @@ footer
     position: absolute;
     top: 10px;
     right: 10px;
-    /* border: 2px solid red; */
 }
 
 #login a
 {
-    /* display: flex; */
     font-size: 1.2em;
     text-decoration: none;
     color: #0065FC;
     font-weight: bold;
 
 }
+/*------- Fin Header ----------- */
 
-/* #section_titre
+/*--------Début Body ----------*/
+
+body
 {
-    border: 1px solid red;
+    /* display: flex; */
+    flex-direction: column;
+    font-family: 'Raleway', 'Arial';
+    font-weight: normal;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+/* body h1, body sp
+{
+    margin: 0px;
 } */
 
-#section h1
+#block-content
 {
-    size: 0.8em;
+    font-family: 'Raleway', serif;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+#titre
+{
+    border: 1px solid red;
+}
+
+
+/*-------Container Recherche -------*/
+#recherche
+{
+    display: flex;
+    align-items: baseline;
+    padding-top: 15px;
+    padding-left: 20px;
+
 }
 
 #recherche_ville
 {
-    display: flex;
-    /* align-items: baseline; */
-    padding-top: 15px;
-    padding-left: 20px;
-    /* border: 2px solid blue; */
-}
-
-#recherche_ville input
-{
-    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-left:10px;
-    font-size: 1em;
     height: 40px;
     font-weight: bold;
-    /* justify-items: center; */
-    /* text-align: center; */
     border: none;
 } 
 
-#recherche_ville button
+#recherche button
 {
     background-color: #0065FC;
-    /* display: flex; */
-    /* align-content: center; */
     height: 40px;
     color: white;
-    border-color: #0065FC;
+    border: none;
     box-shadow: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
+/*------- Fin Recherche -------------*/
 
-#recherche_ville i
-{
-    /* size: 3em; */
-    display: flex;
-    align-items: center;
-    /* border: 1px solid black; */
-    padding-right: 10px;
-}
-
+/*------- Container Filtres ---------*/
 #filtres
 {
     display: flex;
@@ -228,55 +150,14 @@ footer
     align-items: center;
     padding-top: 10px;
     padding-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid red;
 }
-
 
 #filtres label
 {
     margin-right: 15px;
     font-weight: bold;
-}
-
-#btn_economique, #btn_familial, #btn_romantique, #btn_animaux
-{
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-}
-
-#btn_economique button, #btn_familial button, #btn_romantique button, #btn_animaux button
-{
-    
-    padding-left: 25px;
-    padding-right: 15px;
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 1em;
-    height: 40px;
-    margin-right: 15px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    /* border-radius: 15px; */
-    
-}
-
-#icon_eco, #icon_fam, #icon_rom, #icon_ani
-{
-    color: #0065FC;
-    margin: auto;
-    /* position: relative;
-    left: 5px;
-    top: 5px; */
-}
-
-#view_cards
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* align-content: space-between; */
-    /* justify-items: center; */
 }
 
 .circle
@@ -292,13 +173,96 @@ footer
     left: 15px;
 }
 
+#icon_eco, #icon_fam, #icon_rom, #icon_ani, #icon_info
+{
+    color: #0065FC;
+    margin: auto;
+}
+
+#btn_economique, #btn_familial, #btn_romantique, #btn_animaux
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#btn_economique button, #btn_familial button, #btn_romantique button, #btn_animaux button
+{
+    padding-left: 25px;
+    padding-right: 15px;
+    /* text-transform: capitalize; */
+    font-weight: bold;
+    font-size: 1em;
+    height: 40px;
+    margin-right: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #F2F2F2;
+    background-color: white;
+}
+
+#info
+{
+    display: flex;
+    border: 1px solid red;
+}
+
+.circle_info
+{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    /* background-color: #DEEBFF; */
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    margin: auto;
+    /* position: relative; */
+    /* left: 15px; */
+}
+/*-------- Fin Filtres ------------*/
+
+
+/*-------- Container Article -------*/
+section
+{
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    /* flex-direction: column;
+    align-content: space-around;
+    padding: 10px; */
+}
+
+
+article
+{
+    background-color: #d4d1d1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+#view_cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 800px;
+    border: 1px solid red;
+    /* align-items: center; */
+    /* align-content: space-between; */
+    /* justify-items: center; */
+}
+
 .card
 {
     position: relative;
     width: 246px;
     height: 197px;
     border-radius: 20px;
-    /* border: 1px solid black; */
     padding-bottom: 10px;
     background-color: white;
     margin-bottom: 20px;
@@ -311,13 +275,14 @@ footer
     width: 236px;
     height: 100%;
     border-radius: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-
-
 
 .conteneur_details
 {
     position: absolute;
+    height: 70px;
     left: 5px;
     right: 5px;
     bottom: 5px;
@@ -334,17 +299,20 @@ footer
 
 .titre_image
 {
-    
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-
 .stars
 {
+    position: absolute;
     display: flex;
     flex-direction: row;
     margin-top: 5px;
+    margin-bottom: 10px;
+    bottom: 0px;
+    /* border: 1px solid red; */
+    /* align-items: flex-end; */
 }
 
 .star_blue
@@ -358,8 +326,110 @@ footer
     color: #D9D9D9;
     margin-right: 3px;
 }
+/*-------- Fin Container Article -------*/
 
 
+/*-------- Container aside -------------*/
+aside
+{
+    min-width: 420px;
+    width: 420px;
+    background-color: #d4d1d1;
+    /* size: 30%; */
+    border-radius: 20px;
+    padding: 10px;
+    /* flex: 3em; */
+}
+
+#titre-populaire
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border-color: blue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+#container-aside
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-aside
+{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    padding: 5px; 
+    margin-bottom: 15px;
+}
+
+.photo-aside
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    width: 150px;
+}
+
+.conteneur-aside-details
+{
+    position: absolute;
+    flex-direction: column;
+    left: 135px;
+    background-color: white;
+    /* height: 100%; */
+    bottom: 5px;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    /* flex: 3; */
+    /* display: flex; */
+    /* border: 1px solid green; */
+
+}
+
+
+/*-------- Fin container aside ----------*/
+
+
+/*-------- Début Footer -----------------*/
+footer
+{
+    display: flex;
+    background-color: #d4d1d1;
+    /* margin: 0px; */
+    border: 2px solid orange;
+    padding: 20px;
+    padding-left: 45px;
+    /* margin: 0px; */
+    /* width: 100%; */
+}
+
+.footer_details
+{
+    display: flex;
+    min-width: max-content;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin-right: 150px;
+}
+
+footer p
+{
+    margin-bottom: 0px;
+}
+
+/*--------- Fin Footer ------------------*/
 
 @media all and (max-width: 700px)
 {
@@ -398,7 +468,6 @@ footer
         margin: 5px;
         
     }
-
     
 
 }
