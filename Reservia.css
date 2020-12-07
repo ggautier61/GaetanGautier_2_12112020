@@ -1,6 +1,12 @@
 /* A remplacer avent examen car pas visible sur chrome :
 background-color: #d4d1d1 par la couleur #F2F2F2 */
 
+/*----- color ----
+- blue --> #0065FC
+- blue light --> #DEEBFF
+- gray --> #F2F2F2
+- gray to see --> #d4d1d1
+*/
 
 @font-face
 {
@@ -9,6 +15,8 @@ background-color: #d4d1d1 par la couleur #F2F2F2 */
     font-weight: normal;
     font-style: normal;
 }
+
+
 
 /*--------Début Body ----------*/
 body
@@ -40,13 +48,11 @@ header
 #logo img
 {
     width: 116px;
-    height: 54px;
 }
 
 /*-------- Container Navigation --------*/
 #header_right
 {
-    display: flex;
     height: 100%;
 }
 
@@ -60,13 +66,12 @@ nav ul
 {
     list-style-type: none;
     display: flex;
-    padding-left: 0px;
     margin: 0px;
 }
 
 nav li
 {
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 nav a
@@ -87,7 +92,6 @@ nav li:hover
 
 #login
 {
-    display: flex;
     position: absolute;
     top: 40px;
     right: 75px;
@@ -105,7 +109,6 @@ nav li:hover
 
 #block-content
 {
-    font-family: 'Raleway', serif;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -124,13 +127,13 @@ nav li:hover
 #titre p
 {
     margin-top: 5px;
-    margin-bottom: 0px;
 }
 
 /*-------Container Recherche -------*/
 #recherche
 {
     display: flex;
+    width: 400px;
     align-items: baseline;
     padding-left: 20px;
     margin-bottom: 20px;
@@ -138,9 +141,8 @@ nav li:hover
 
 #recherche_ville
 {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 25px;
+    width: 100%;
+    margin-left: 20px;
     height: 40px;
     font-weight: bold;
     border: none;
@@ -148,14 +150,13 @@ nav li:hover
 
 #recherche button
 {
+    width: 134px;
     background-color: #0065FC;
     height: 40px;
     color: white;
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /*------- Fin Recherche -------------*/
@@ -185,7 +186,6 @@ nav li:hover
     line-height: 40px;
     background-color: #DEEBFF;
     border-radius: 20px;
-    margin: auto;
     position: relative;
     left: 15px;
 }
@@ -193,7 +193,7 @@ nav li:hover
 .icon 
 {
     color: #0065FC;
-    margin: auto;
+    vertical-align: middle;
 }
 
 .btn_filtre
@@ -215,7 +215,9 @@ nav li:hover
     border: 2px solid #F2F2F2;
     background-color: white;
 }
+/*-------- Fin Filtres ------------*/
 
+/*-------- Début Info -------------*/
 #info
 {
     display: flex;
@@ -230,14 +232,17 @@ nav li:hover
     height: 24px;
     width: 24px;
     text-align: center;
-    line-height: 20px;
+    /* line-height: 20px; */
     background-color: #DEEBFF;
-    border: 2px solid #F2F2F2;
     border-radius: 12px;
     margin-right: 15px;
-    
 }
-/*-------- Fin Filtres ------------*/
+
+/* #icon_info
+{
+    vertical-align: middle;
+} */
+/*-------- Fin Info ---------------*/
 
 /*-------- Container Article -------*/
 #section_hebergements
@@ -259,9 +264,9 @@ nav li:hover
     width: 880px;
 }
 
-article h1
+article h2
 {
-    margin-block-start: 1.5em;
+    margin-top: 1.5em;
     font-size: 1.5em;
 }
 
@@ -364,9 +369,9 @@ aside
     align-items: baseline;
 }
 
-aside h1
+aside h2
 {
-    margin-block-start: 1.5em;
+    margin-top: 1.5em;
     font-size: 1.5em;
 }
 
