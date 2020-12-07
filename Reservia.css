@@ -1,3 +1,7 @@
+/* A remplacer avent examen car pas visible sur chrome :
+background-color: #d4d1d1 par la couleur #F2F2F2 */
+
+
 @font-face
 {
     font-family: 'Raleway';
@@ -6,19 +10,31 @@
     font-style: normal;
 }
 
+/*--------Début Body ----------*/
+body
+{
+    margin: 0px;
+    font-family: 'Raleway', 'Arial';
+    font-weight: normal;
+    width: 1440px;
+    position: absolute;
+}
+
 header
 {
-    /* border: 1px solid black; */
-    height: 90px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 50px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 #conteneur
 {
     display: flex;
+    height: 100%;
     justify-content: space-between;
-    padding-right: 120px;
+    align-items: center;
+    padding-right: 160px;
+    padding-left: 5px;
 }
 
 #logo img
@@ -28,17 +44,24 @@ header
 }
 
 /*-------- Container Navigation --------*/
+#header_right
+{
+    display: flex;
+    height: 100%;
+}
+
 nav
 {
     display: flex;
-    /* border: 2px solid yellow; */
+    height: 100%;
 }
 
 nav ul
 {
     list-style-type: none;
     display: flex;
-    /* border: 2px solid red;*/
+    padding-left: 0px;
+    margin: 0px;
 }
 
 nav li
@@ -50,15 +73,15 @@ nav a
 {
     font-size: 1.2em;
     text-decoration: none;
+    height: 100%;
     display: flex;
-    vertical-align: middle;
-    text-align: center;
+    align-items: center;
 }
 
 nav li:hover
 {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-top: 2px solid #0065FC;
 }
 /*--------- Fin Navigation -----------*/
 
@@ -66,8 +89,8 @@ nav li:hover
 {
     display: flex;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 40px;
+    right: 75px;
 }
 
 #login a
@@ -80,51 +103,44 @@ nav li:hover
 }
 /*------- Fin Header ----------- */
 
-/*--------Début Body ----------*/
-
-body
-{
-    /* display: flex; */
-    flex-direction: column;
-    font-family: 'Raleway', 'Arial';
-    font-weight: normal;
-    margin: 0px;
-    border: 1px solid black;
-}
-
-/* body h1, body sp
-{
-    margin: 0px;
-} */
-
 #block-content
 {
     font-family: 'Raleway', serif;
-    padding: 10px;
-    border: 1px solid red;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #titre
 {
-    border: 1px solid red;
+    margin-bottom: 20px;
+    padding-left: 5px;
 }
 
+#titre h1
+{
+    margin: 0px;
+}
+
+#titre p
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
 
 /*-------Container Recherche -------*/
 #recherche
 {
     display: flex;
     align-items: baseline;
-    padding-top: 15px;
     padding-left: 20px;
-
+    margin-bottom: 20px;
 }
 
 #recherche_ville
 {
     margin-left: 10px;
     margin-right: 10px;
-    padding-left:10px;
+    padding-left: 25px;
     height: 40px;
     font-weight: bold;
     border: none;
@@ -136,10 +152,12 @@ body
     height: 40px;
     color: white;
     border: none;
-    box-shadow: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 /*------- Fin Recherche -------------*/
 
 /*------- Container Filtres ---------*/
@@ -148,10 +166,9 @@ body
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #filtres label
@@ -173,23 +190,22 @@ body
     left: 15px;
 }
 
-#icon_eco, #icon_fam, #icon_rom, #icon_ani, #icon_info
+.icon 
 {
     color: #0065FC;
     margin: auto;
 }
 
-#btn_economique, #btn_familial, #btn_romantique, #btn_animaux
+.btn_filtre
 {
     display: flex;
     flex-direction: row;
 }
 
-#btn_economique button, #btn_familial button, #btn_romantique button, #btn_animaux button
+.btn_filtre button
 {
     padding-left: 25px;
     padding-right: 15px;
-    /* text-transform: capitalize; */
     font-weight: bold;
     font-size: 1em;
     height: 40px;
@@ -203,58 +219,57 @@ body
 #info
 {
     display: flex;
-    border: 1px solid red;
+    flex-direction: row;
+    align-items: baseline;
+    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
 .circle_info
 {
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
     text-align: center;
     line-height: 20px;
-    /* background-color: #DEEBFF; */
+    background-color: #DEEBFF;
     border: 2px solid #F2F2F2;
-    border-radius: 10px;
-    margin: auto;
-    /* position: relative; */
-    /* left: 15px; */
+    border-radius: 12px;
+    margin-right: 15px;
+    
 }
 /*-------- Fin Filtres ------------*/
 
-
 /*-------- Container Article -------*/
-section
+#section_hebergements
 {
     display: flex;
     margin-bottom: 15px;
-    flex-wrap: wrap;
-    /* flex-direction: column;
-    align-content: space-around;
-    padding: 10px; */
 }
 
 
-article
+#section_hebergements article
 {
     background-color: #d4d1d1;
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 20px;
     margin-right: 30px;
+    width: 880px;
+}
+
+article h1
+{
+    margin-block-start: 1.5em;
+    font-size: 1.5em;
 }
 
 #view_cards
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 800px;
-    border: 1px solid red;
-    /* align-items: center; */
-    /* align-content: space-between; */
-    /* justify-items: center; */
+    justify-content: space-between;
 }
 
 .card
@@ -311,8 +326,6 @@ article
     margin-top: 5px;
     margin-bottom: 10px;
     bottom: 0px;
-    /* border: 1px solid red; */
-    /* align-items: flex-end; */
 }
 
 .star_blue
@@ -326,19 +339,22 @@ article
     color: #D9D9D9;
     margin-right: 3px;
 }
-/*-------- Fin Container Article -------*/
 
+#afficher_plus
+{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+/*-------- Fin Container Article -------*/
 
 /*-------- Container aside -------------*/
 aside
 {
-    min-width: 420px;
     width: 420px;
     background-color: #d4d1d1;
-    /* size: 30%; */
     border-radius: 20px;
-    padding: 10px;
-    /* flex: 3em; */
+    padding-left: 37px;
+    padding-right: 37px;
 }
 
 #titre-populaire
@@ -347,13 +363,13 @@ aside
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    border-color: blue;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
-
-
+aside h1
+{
+    margin-block-start: 1.5em;
+    font-size: 1.5em;
+}
 
 #container-aside
 {
@@ -387,32 +403,97 @@ aside
     flex-direction: column;
     left: 135px;
     background-color: white;
-    /* height: 100%; */
     bottom: 5px;
     top: 5px;
     right: 5px;
     padding: 10px;
-    /* flex: 3; */
-    /* display: flex; */
-    /* border: 1px solid green; */
-
 }
-
-
 /*-------- Fin container aside ----------*/
 
+/*-------- Début section 2 Activités ----*/
+#section_activites
+{
+    margin-bottom: 60px;
+}
+
+#activite_view_card
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activite_card
+{
+    width: 300px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.activite_card_445
+{
+    height: 445px;
+}
+
+.activite_card_165
+{
+    height: 165px;
+}
+
+.activite_card_195
+{
+    height: 195px;
+}
+
+.activite_card_215
+{
+    height: 215px;
+}
+
+.activite_card_240
+{
+    height: 240px;
+}
+
+.photo_activite
+{
+    height: 95%;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.activite_titre
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    height: 56px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    line-height: 56px;
+    box-shadow: 2px 2px 2px #d4d1d1;
+}
+
+.double_activite_card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*-------- Fin section 2 Activités ------*/
 
 /*-------- Début Footer -----------------*/
 footer
 {
     display: flex;
     background-color: #d4d1d1;
-    /* margin: 0px; */
-    border: 2px solid orange;
     padding: 20px;
     padding-left: 45px;
-    /* margin: 0px; */
-    /* width: 100%; */
+    justify-content: space-between;
 }
 
 .footer_details
@@ -421,7 +502,7 @@ footer
     min-width: max-content;
     flex-direction: column;
     /* border: 1px solid red; */
-    margin-right: 150px;
+    margin-right: 250px;
 }
 
 footer p
