@@ -24,7 +24,7 @@ body
     margin: 0px;
     font-family: 'Raleway', 'Arial';
     font-weight: normal;
-    width: 1440px;
+    max-width: 1440px;
     position: absolute;
 }
 
@@ -86,7 +86,7 @@ nav a
 nav li:hover
 {
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 2px solid ;
 }
 /*--------- Fin Navigation -----------*/
 
@@ -200,6 +200,12 @@ nav li:hover
 {
     display: flex;
     flex-direction: row;
+    transition: transform .2s; /* Animation */
+}
+
+.btn_filtre:hover
+{
+    transform: scale(1.2);
 }
 
 .btn_filtre button
@@ -237,11 +243,6 @@ nav li:hover
     border-radius: 12px;
     margin-right: 15px;
 }
-
-/* #icon_info
-{
-    vertical-align: middle;
-} */
 /*-------- Fin Info ---------------*/
 
 /*-------- Container Article -------*/
@@ -516,31 +517,38 @@ footer p
 
 /*--------- Fin Footer ------------------*/
 
-@media all and (max-width: 700px)
+@media screen and (max-width: 700px)
 {
-    #conteneur
+    body
     {
-        /* flex-wrap: wrap; */
-        flex-direction: column;
-        padding-right: 0px;
-
-        /* width: auto;
-        margin: auto;
-        padding-right: 0px; */
-        justify-content: flex-end;
-        /* justify-content: stretch; */
+        width: auto ;
     }
 
-    nav
+    #conteneur
     {
-        /* display: flex; */
-        /* flex: auto; */
-        /* width: auto; */
+        flex-direction: column;
+        padding-left: 0px;
+        /* justify-content: flex-end; */
+    }
+
+    #section_hebergements
+    {
+        display: block;
+    }
+
+    main 
+    {
+        width: auto;
+    }
+
+    aside 
+    {
+        order: -1;
+    }
+
+    /* nav
+    {
         justify-content: center;
-        /* justify-content: space-evenly; */
-
-
-        
     }
 
     nav ul
@@ -551,7 +559,11 @@ footer p
     nav li
     {
         margin: 5px;
-        
+    } */
+
+    footer 
+    {
+        flex-direction: column;
     }
     
 
