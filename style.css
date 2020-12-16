@@ -463,10 +463,7 @@ aside h2
 {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 445px;
-    align-content: space-between;
 }
 
 .activite_card
@@ -527,6 +524,14 @@ aside h2
     height: 240px;
 }
 
+.double_activite
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 445px;
+}
+
 .photo_activite
 {
     height: 95%;
@@ -569,7 +574,7 @@ footer
     min-width: max-content;
     flex-direction: column;
     margin-top: 10px;
-    margin-right: 250px;
+    margin-right: 200px;
 }
 
 footer p
@@ -794,13 +799,14 @@ footer p
         flex-direction: column;
         flex-wrap: wrap;
         height: 100%;
+        align-content: center;
     }
 
     .activite_card
     {
         margin-bottom: 25px;
         /* height: 190px; */
-        width: 100%;
+        width: 450px;
     }
 
 
