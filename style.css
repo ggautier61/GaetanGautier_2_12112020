@@ -591,10 +591,9 @@ footer p
 {
     header
     {
-        height: 80px;
+        height: 100%;
         padding-top: 30px;
         margin-left: 0px;
-        margin-bottom: 0px;
     }
 
     #conteneur
@@ -622,8 +621,6 @@ footer p
 
     nav
     {
-        position: relative;
-        top: 180px;
         height: 70px;
     }
 
@@ -1038,6 +1035,7 @@ footer p
     {
         width: auto;
         box-shadow: 4px 4px rgb(242 242 242 / 90%);
+        border: 1px solid  rgb(242 242 242);
     }
 
     aside 
