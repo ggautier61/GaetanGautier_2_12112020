@@ -6,13 +6,12 @@
     font-style: normal;
 }
 
-
 /*--------Début Body ----------*/
 body
 {
     margin: 0px;
     font-family: 'Raleway', 'Arial';
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 
 header
@@ -235,7 +234,6 @@ nav a:hover
     padding-left: 25px;
     padding-right: 15px;
     font-weight: bold;
-    font-size: 1em;
     height: 40px;
     margin-right: 15px;
     border-top-right-radius: 20px;
@@ -422,6 +420,11 @@ aside h2
     min-width: 305px;
 }
 
+#container-aside a
+{
+    color: black;
+}
+
 .card-aside
 {
     position: relative;
@@ -465,6 +468,11 @@ aside h2
 {
     display: flex;
     justify-content: space-between;
+}
+
+#activite_view_card a
+{
+    color: black;
 }
 
 .activite_card
