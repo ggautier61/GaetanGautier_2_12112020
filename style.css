@@ -300,6 +300,7 @@ section h2
 {
     display: flex;
     flex-wrap: wrap;
+    min-width: 305px;
     justify-content: space-around;
     max-width: 800px;
     margin-left: auto;
@@ -383,6 +384,7 @@ section h2
 #afficher_plus
 {
     font-weight: bold;
+    padding-left: 10px;
     padding-bottom: 20px;
     padding-top: 10px;
 }
@@ -417,7 +419,7 @@ aside h2
 {
     display: flex;
     flex-direction: column;
-    min-width: 305px;
+    /* min-width: 305px; */
 }
 
 #container-aside a
@@ -579,7 +581,7 @@ footer p
 /*--------- Fin Footer ------------------*/
 
 
-@media screen and (min-width: 481px) and (max-width: 1023px)
+@media screen and (min-width: 481px) and (max-width: 1024px)
 {
     header
     {
@@ -744,7 +746,6 @@ footer p
 
     .card
     {
-        width: auto;
         border: 1px solid #F2F2F2;
         box-shadow: 3px 3px 5px #F2F2F2;
         min-width: 100px;
@@ -761,6 +762,13 @@ footer p
 
     #container-aside {
         align-items: center;
+    }
+
+    #container-aside a, #activite_view_card a
+    {
+        width: 100%;
+        justify-content: center;
+        display: flex;
     }
 
     .card-aside
@@ -810,7 +818,7 @@ footer p
     {
         margin-bottom: 25px;
         max-width: 600px;
-        width: auto;
+        width: 100%;
     }
 
     .activite_card_445
@@ -1006,6 +1014,13 @@ footer p
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    #view_cards
+    {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     
     .photo
     {
@@ -1020,9 +1035,9 @@ footer p
 
     .card
     {
-        width: auto;
         box-shadow: 5px 5px 10px rgb(242 242 242);
         border: 1px solid  rgb(242 242 242);
+        width: auto;
     }
 
     aside 
